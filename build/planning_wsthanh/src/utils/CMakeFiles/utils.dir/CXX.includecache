@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/src/persistence/include/Database.hpp
+memory
+-
+sqlite3.h
+-
+string
+-
+
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/src/persistence/include/queries/CameraQueries.hpp
+Database.hpp
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/src/persistence/include/queries/Database.hpp
+array
+-
+
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/src/persistence/sqlite3/src/sqlite3/sqlite3.h
+stdarg.h
+-
+
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/src/utils/include/utils/constants.h
+Database.hpp
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/src/utils/include/utils/Database.hpp
+cmath
+-
+array
+-
+string
+-
+vector
+-
+tbb/task_arena.h
+-
+
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/src/utils/src/utils/constants.cpp
+utils/constants.h
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/src/utils/src/utils/utils/constants.h
+queries/CameraQueries.hpp
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/src/utils/src/utils/queries/CameraQueries.hpp
+

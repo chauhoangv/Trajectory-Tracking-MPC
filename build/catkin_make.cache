@@ -1,0 +1,2 @@
+planning_wsthanh/src/alglib:planning_wsthanh/src/communication:planning_wsthanh/src/localization:planning_wsthanh/src/path_planning:planning_wsthanh/src/persistence:planning_wsthanh/src/utils
+-DCATKIN_DEVEL_PREFIX=/home/thenewbies/Chau_Workspace/devel -DCMAKE_INSTALL_PREFIX=/home/thenewbies/Chau_Workspace/install -G Unix Makefiles

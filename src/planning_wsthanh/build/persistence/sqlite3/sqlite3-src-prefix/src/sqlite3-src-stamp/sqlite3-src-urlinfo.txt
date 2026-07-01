@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://sqlite.org/2025/sqlite-amalgamation-3490000.zip'
+tag='SHA3_256=138b6922eb274c953c9d8f3249c39706ad3e40f3eef5d81bbeb73509b41f52c9'

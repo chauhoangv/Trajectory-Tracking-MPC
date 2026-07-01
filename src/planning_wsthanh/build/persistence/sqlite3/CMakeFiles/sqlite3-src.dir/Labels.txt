@@ -1,0 +1,13 @@
+# Target labels
+ sqlite3-src
+# Source files and their labels
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/CMakeFiles/sqlite3-src
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/CMakeFiles/sqlite3-src.rule
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/CMakeFiles/sqlite3-src-complete.rule
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-install.rule
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-mkdir.rule
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-download.rule
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-update.rule
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-patch.rule
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-configure.rule
+/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-build.rule

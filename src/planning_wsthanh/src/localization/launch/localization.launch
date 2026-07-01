@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Robot Localization EKF Node -->
+  <rosparam command="load" file="$(find localization)/config/localization.yaml" ns="ekf_filter_node"/>
+  
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_filter_node" output="screen" respawn="true">
+    <remap from="/car1/imu" to="/car1/imu"/>
+    <remap from="/car1/odometry" to="/car1/odometry"/>
+    <remap from="/odometry/filtered" to="/odometry/filtered"/>
+  </node>
+
+  <node pkg="localization" type="localization_plot.py" name="localization_plot" output="screen" />
+  <!-- Optional: Static TF Publisher for base_link to imu -->
+  <!-- Removed: IMU is now published directly in base_link frame -->
+  <!-- <node pkg="tf" type="static_transform_publisher" name="imu_to_base_link" 
+        args="0 0 0 0 0 0 base_link imu_link 100" /> -->
+</launch>

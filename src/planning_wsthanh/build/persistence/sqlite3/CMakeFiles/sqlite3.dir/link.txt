@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -Wall -std=c99 -DEXT_DEP -fdiagnostics-show-option  -shared -Wl,-soname,libsqlite3.so -o /home/thenewbies/Chau_Workspace/src/planning_wsthanh/devel/lib/libsqlite3.so CMakeFiles/sqlite3.dir/src/sqlite3/sqlite3.c.o 

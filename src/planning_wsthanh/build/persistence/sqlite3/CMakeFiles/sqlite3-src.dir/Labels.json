@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/CMakeFiles/sqlite3-src"
+		},
+		{
+			"file" : "/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/CMakeFiles/sqlite3-src.rule"
+		},
+		{
+			"file" : "/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/CMakeFiles/sqlite3-src-complete.rule"
+		},
+		{
+			"file" : "/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-install.rule"
+		},
+		{
+			"file" : "/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-mkdir.rule"
+		},
+		{
+			"file" : "/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-download.rule"
+		},
+		{
+			"file" : "/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-update.rule"
+		},
+		{
+			"file" : "/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-patch.rule"
+		},
+		{
+			"file" : "/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-configure.rule"
+		},
+		{
+			"file" : "/home/thenewbies/Chau_Workspace/src/planning_wsthanh/build/persistence/sqlite3/sqlite3-src-prefix/src/sqlite3-src-stamp/sqlite3-src-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sqlite3-src"
+		],
+		"name" : "sqlite3-src"
+	}
+}

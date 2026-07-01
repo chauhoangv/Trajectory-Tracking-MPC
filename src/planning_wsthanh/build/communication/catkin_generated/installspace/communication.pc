@@ -1,0 +1,8 @@
+prefix=/home/thenewbies/Chau_Workspace/src/planning_wsthanh/install
+
+Name: communication
+Description: Description of communication
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime nav_msgs roscpp rospy sensor_msgs std_msgs utils image_transport cv_bridge

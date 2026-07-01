@@ -1,0 +1,8 @@
+prefix=/home/thenewbies/Chau_Workspace/install
+
+Name: persistence
+Description: Description of persistence
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lpersistence
+Requires: roscpp roslib

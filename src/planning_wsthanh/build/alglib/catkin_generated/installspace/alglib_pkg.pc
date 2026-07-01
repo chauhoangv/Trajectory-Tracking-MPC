@@ -1,0 +1,8 @@
+prefix=/home/thenewbies/Chau_Workspace/src/planning_wsthanh/install
+
+Name: alglib_pkg
+Description: Description of alglib_pkg
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lalglib_pkg
+Requires: 

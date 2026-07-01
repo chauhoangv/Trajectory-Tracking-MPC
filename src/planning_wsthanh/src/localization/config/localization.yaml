@@ -1,0 +1,114 @@
+# Robot Localization EKF Configuration
+
+# Frequency of the filter
+frequency: 30
+
+# Timeout for sensor data (seconds)
+sensor_timeout: 0.1
+
+# Enable 2D mode
+two_d_mode: true
+
+# Frame IDs
+map_frame: map
+odom_frame: odom
+base_link_frame: base_link
+world_frame: odom
+
+# Initial State [x, y, z, roll, pitch, yaw, vx, vy, vz, vroll, vpitch, vyaw, ax, ay, az]
+# Thay đổi x (số đầu tiên), y (số thứ 2), yaw (số thứ 6) bằng tọa độ thực tế của xe trong sa bàn
+initial_state: [11.77,  2.076,  0.0,
+                0.0,  0.0,  0.0,
+                0.0,  0.0,  0.0,
+                0.0,  0.0,  0.0,
+                0.0,  0.0,  0.0]
+
+# initial_state: [17.18,  10.416,  0.0,
+#                 0.0,  0.0,  0.0,
+#                 0.0,  0.0,  0.0,
+#                 0.0,  0.0,  0.0,
+#                 0.0,  0.0,  0.0]
+
+# IMU Configuration
+# IMU provides: roll, pitch, yaw (from gyro/magnetometer) and acceleration
+imu0: /car1/imu
+imu0_config: [false, false, false,  # x, y, z position
+              false, false, true,   # roll, pitch, yaw (angular position) - Bật TRUE để dùng Yaw tuyệt đối đã cân bằng
+              false, false, false,  # x, y, z velocity
+              false, false, true,   # roll_rate, pitch_rate, yaw_rate
+              false, false, false]  # x, y, z acceleration
+
+imu0_nodelay: false
+imu0_differential: false
+imu0_remove_gravitational_acceleration: true
+
+# Odometry Configuration
+# Odometry provides: x, y position and velocities
+odom0: /car1/odometry
+odom0_config: [false, false, false,  # x, y, z position
+               false, false, false,  # roll, pitch, yaw
+               true,  false, false,  # x, y, z velocity
+               false, false, false,  # roll_rate, pitch_rate, yaw_rate
+               false, false, false]  # x, y, z acceleration
+
+odom0_nodelay: false
+odom0_differential: false
+
+# Velocity received from odometry is in body frame
+odom0_pose_use_twist: false
+
+# GPS Configuration (optional)
+# gps0: /gps/fix
+# gps0_config: [true, true, false,
+#               false, false, false,
+#               false, false, false,
+#               false, false, false,
+#               false, false, false]
+# gps0_nodelay: false
+# gps0_differential: false
+# use_control: false
+
+# Process noise covariance matrix (Q) - MUST BE 15x15
+process_noise_covariance: [
+  0.05, 0,    0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0,
+  0,    0.05, 0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0,
+  0,    0,    0.06, 0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0,
+  0,    0,    0,    0.03, 0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0,
+  0,    0,    0,    0,    0.03, 0,    0,     0,     0,    0,    0,    0,    0,    0,    0,
+  0,    0,    0,    0,    0,    0.06, 0,     0,     0,    0,    0,    0,    0,    0,    0,
+  0,    0,    0,    0,    0,    0,    0.025, 0,     0,    0,    0,    0,    0,    0,    0,
+  0,    0,    0,    0,    0,    0,    0,     0.025, 0,    0,    0,    0,    0,    0,    0,
+  0,    0,    0,    0,    0,    0,    0,     0,     0.04, 0,    0,    0,    0,    0,    0,
+  0,    0,    0,    0,    0,    0,    0,     0,     0,    0.01, 0,    0,    0,    0,    0,
+  0,    0,    0,    0,    0,    0,    0,     0,     0,    0,    0.01, 0,    0,    0,    0,
+  0,    0,    0,    0,    0,    0,    0,     0,     0,    0,    0,    0.02, 0,    0,    0,
+  0,    0,    0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0.01, 0,    0,
+  0,    0,    0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0.01, 0,
+  0,    0,    0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0.015
+]
+
+# Initial estimate error covariance (P) - MUST BE 15x15
+initial_estimate_covariance: [
+  1e-9, 0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+  0,    1e-9, 0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+  0,    0,    1e-9, 0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+  0,    0,    0,    1.0,  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+  0,    0,    0,    0,    1.0,  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+  0,    0,    0,    0,    0,    1e-9, 0,    0,    0,    0,    0,    0,    0,    0,    0,
+  0,    0,    0,    0,    0,    0,    1.0,  0,    0,    0,    0,    0,    0,    0,    0,
+  0,    0,    0,    0,    0,    0,    0,    1.0,  0,    0,    0,    0,    0,    0,    0,
+  0,    0,    0,    0,    0,    0,    0,    0,    1.0,  0,    0,    0,    0,    0,    0,
+  0,    0,    0,    0,    0,    0,    0,    0,    0,    1.0,  0,    0,    0,    0,    0,
+  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    1.0,  0,    0,    0,    0,
+  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    1.0,  0,    0,    0,
+  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    1.0,  0,    0,
+  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    1.0,  0,
+  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    1.0
+]
+
+# Print debug information
+debug: false
+debug_out_file: /home/user/ekf_debug.txt
+
+# Enable printing of diagnostics
+print_diagnostics: true

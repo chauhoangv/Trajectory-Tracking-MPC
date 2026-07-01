@@ -1,0 +1,2 @@
+alglib:communication:localization:path_planning:persistence:utils
+-DCATKIN_DEVEL_PREFIX=/home/thenewbies/Chau_Workspace/src/planning_wsthanh/devel -DCMAKE_INSTALL_PREFIX=/home/thenewbies/Chau_Workspace/src/planning_wsthanh/install -G Unix Makefiles

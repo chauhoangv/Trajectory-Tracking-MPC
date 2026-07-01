@@ -1,0 +1,8 @@
+prefix=/home/thenewbies/Chau_Workspace/devel
+
+Name: utils
+Description: Description of utils
+Version: 0.0.0
+Cflags: -I/home/thenewbies/Chau_Workspace/devel/include -I/home/thenewbies/Chau_Workspace/src/planning_wsthanh/src/utils/include
+Libs: -L${prefix}/lib -lutils
+Requires: message_runtime persistence

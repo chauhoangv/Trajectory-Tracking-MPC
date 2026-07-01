@@ -1,0 +1,11 @@
+# Request
+float64 dest_x
+float64 dest_y
+---
+# Response
+std_msgs/Float32MultiArray state_refs
+std_msgs/Float32MultiArray input_refs
+std_msgs/Float32MultiArray wp_attributes
+std_msgs/Float32MultiArray wp_normals
+bool success
+
